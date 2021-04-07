@@ -19,7 +19,7 @@ Cage* last;
 Train(){
 first = nullptr;
 last = nullptr;
-};
+}
 void add_cage(const bool);
 void print_train();
 int train_length();};
