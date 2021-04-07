@@ -1,5 +1,5 @@
 // Copyright 2021 by Liza
-#ifdef INCLUDE_TRAIN_H_
+#ifndef INCLUDE_TRAIN_H_
 #define INCLUDE_TRAIN_H_
 #include <iostream>
 class Cage{
@@ -15,9 +15,9 @@ class Train {
  private:
 Cage* first;
 Cage* last;
-public:
+ public:
 Train();
 void add_cage();
 void print_train();
 int train_length();};
-#endif // INCLUDE_TRAIN_H_
+#endif  // INCLUDE_TRAIN_H_
