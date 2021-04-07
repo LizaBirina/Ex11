@@ -16,7 +16,7 @@ class Train {
 Cage* first;
 Cage* last;
  public:
-Train(){
+Train() {
 first = nullptr;
 last = nullptr;}
 void add_cage(const bool);
