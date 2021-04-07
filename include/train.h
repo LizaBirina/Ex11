@@ -18,8 +18,7 @@ Cage* last;
  public:
 Train(){
 first = nullptr;
-last = nullptr;
-}
+last = nullptr;}
 void add_cage(const bool);
 void print_train();
 int train_length();};
