@@ -16,8 +16,11 @@ class Train {
 Cage* first;
 Cage* last;
  public:
-Train();
-void add_cage();
+Train(){
+first = nullptr;
+last = nullptr;
+};
+void add_cage(const bool);
 void print_train();
 int train_length();};
 #endif  // INCLUDE_TRAIN_H_

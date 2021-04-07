@@ -2,14 +2,8 @@
 #include "train.h"
 #include <iostream>
 #include <cstdlib>
-void Cage::on() {
-light = true;}
-void Cage::off() {
-light = false;}
-bool Cage::get() const {
-return light;}
-void Train::add_cage() {
-Cage* newcage = new Cage;
+void Train::add_cage(const bool light) {
+Cage* newcage = new Cage(light);
 if (this->first) {
 this->first->prev = newcage;
 this->last->next = newcage;}
@@ -33,7 +27,7 @@ ptr = ptr->next;}
 if (ptr->get()) {
 std::cout << "Cage#" << i << "\tlight is on"
 << std::endl;}
-else 
+else
 {std::cout << "Cage#" << i << "\tlight is off"
 << std::endl;}}
 int Train::train_length() {
